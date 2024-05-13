@@ -19,11 +19,21 @@ The Active Directory lab provides a controlled environment to explore and practi
 - Windows 10 [Iso](https://www.microsoft.com/en-us/software-download/windows10)
 - Windows server [Iso](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Step 1
+- Create a diagram
 
-Every screenshot should have some text explaining what the screenshot is about.
+  ![AD Diagram](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c68608b1-f97f-4b5c-a829-12c5a6ee2ae6)
 
-Example below.
+*Ref 1: Network Diagram of the Active Directory *
 
-*Ref 1: Network Diagram*
+1. Download and install VirtualBox
+2. Download Windows 10 and Windows Server ISO
+3. Create first virtual machine, the domain controller 
+4. Give the domain controller two network adapters, one is going to be used to connect to the outside internet and the other is going to be used to connect the VirtualBox to a private network that the clients are going to connect to.
+5. Assign IP addressing for the internal network, the external network will automatically get IP addressing from home network.
+6. Name the server, install Active Directory, and create the domain.
+7. Configure the domain and routing so the clients on the private network can reach the internet through the domain controller.
+8. Set up DHCP on the domain controller so the Windows 10 machine can automatically get an IP address.
+9. Run a powershell script that will create 1,000 users for the Active Directory.
+10. Create another virtual machine called the Client1 and install the Windows 10 on it. This will connect to the private VirtualBox network.
+11. Join Client1 to the domain and log into it with one of the domain accounts.
