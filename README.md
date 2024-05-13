@@ -13,11 +13,11 @@ The Active Directory lab provides a controlled environment to explore and practi
 - Trust Relationship Management: Explore the establishment and management of trust relationships between Active Directory domains and forests.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- Script for user [accounts](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1cxeEdWYTB6YVltSS0xLUc5WG00WUVpSFF2d3xBQ3Jtc0tuVU9MVUtFS3hoblpTVGF0Z0s5bjdZMzdINVRlTWVuNzdTTENCb2x5RjlDOUp6bmFaMC1HekFUQnVzb0xMWEZYTWdiQlpiZVpCWnYxZXFjeTdTTXgxN3ctU1lqUmR4aVNNeFlLTkhrcEplRmNJU2xYbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI)
+- Windows 10 [Iso](https://www.microsoft.com/en-us/software-download/windows10)
+- Windows server [Iso](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
