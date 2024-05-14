@@ -23,7 +23,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 
   ![AD Diagram](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c68608b1-f97f-4b5c-a829-12c5a6ee2ae6)
 
-*Ref 1: Network Diagram of the Active Directory *
+*Ref 1: Network Diagram of the Active Directory*
 
 1. Download and install VirtualBox
 2. Download Windows 10 and Windows Server ISO
@@ -48,13 +48,21 @@ The Active Directory lab provides a controlled environment to explore and practi
   ![DC settings](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6be32113-0a87-4788-916a-651417667a73)
 
 *Ref 2: Settings for the Domain Controller*
+
 * The DC needs at least 15 GB to actual work.
 
 * Because there are two NICs in the diagram, there needs to be two adapters
 ![DC settings adapter1](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/a0cbe243-5f38-4c7c-9570-f6acb0248a54)
+
 *Ref 3: The NAT is already attached to the network and is connected to the house internet*
 
 ![DC settings adapter2](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/8bc64443-58c3-45b9-8106-2eba3fe4119d)
 
 *Ref 4: The second adapter is dedicated to the internal vmware, so that is why it is attached to the Internal Network*
+
+* Spin up the DC vm and select the Standard Evaluation Desktop Experience option.
+
+  ![microsoft server OS](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/12db9978-c533-494e-bc38-2f900f5d0459)
+
+*Ref 5: The Standard Evaluation Desktop Experience option makes the command line available*
 
