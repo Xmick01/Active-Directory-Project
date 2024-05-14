@@ -83,3 +83,14 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![DC router names](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/9328a2ac-50ab-4edd-9269-e2f5fdda9163)
 *Ref 8: to see which is which, check the home IP address for each. The one connected to the internet starts with 10.*
+
+* Next, configure the IP addressing for the internal NIC
+
+  ![AD Diagram internal](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/78d5e61d-805c-4440-8394-1f3de175f562)
+
+*Ref 9: All the relevant info is included in the diagram. The default gateway is empty because the domain controller will be the default gateway*
+
+![internal IP](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/0cfcffd6-59f9-4d78-8a9f-ecf3a5204c1c)
+
+*Ref 10: The preferred DNS server will use itself as DNS*
+
