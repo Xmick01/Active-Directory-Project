@@ -19,8 +19,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 - Windows 10 [Iso](https://www.microsoft.com/en-us/software-download/windows10)
 - Windows server [Iso](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019)
 
-## Step 1
-- Create a diagram
+## Step 1: Create a diagram
 
   ![AD Diagram](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c68608b1-f97f-4b5c-a829-12c5a6ee2ae6)
 
@@ -37,3 +36,25 @@ The Active Directory lab provides a controlled environment to explore and practi
 9. Run a powershell script that will create 1,000 users for the Active Directory.
 10. Create another virtual machine called the Client1 and install the Windows 10 on it. This will connect to the private VirtualBox network.
 11. Join Client1 to the domain and log into it with one of the domain accounts.
+
+
+
+## Step 2: Install Applications and Virtual Machines
+
+* Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* Download [Windows Server 2022 ISO](https://info.microsoft.com/ww-landing-windows-server-2022.html)
+* Download [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10)
+
+  ![DC settings](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6be32113-0a87-4788-916a-651417667a73)
+
+*Ref 2: Settings for the Domain Controller*
+* The DC needs at least 15 GB to actual work.
+
+* Because there are two NICs in the diagram, there needs to be two adapters
+![DC settings adapter1](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/a0cbe243-5f38-4c7c-9570-f6acb0248a54)
+*Ref 3: The NAT is already attached to the network and is connected to the house internet*
+
+![DC settings adapter2](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/8bc64443-58c3-45b9-8106-2eba3fe4119d)
+
+*Ref 4: The second adapter is dedicated to the internal vmware, so that is why it is attached to the Internal Network*
+
