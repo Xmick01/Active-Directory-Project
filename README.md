@@ -23,7 +23,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 
   ![AD Diagram](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c68608b1-f97f-4b5c-a829-12c5a6ee2ae6)
 
-*Ref 1: Network Diagram of the Active Directory*
+*Network Diagram of the Active Directory*
 
 1. Download and install VirtualBox
 2. Download Windows 10 and Windows Server ISO
@@ -47,29 +47,29 @@ The Active Directory lab provides a controlled environment to explore and practi
 
   ![DC settings](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6be32113-0a87-4788-916a-651417667a73)
 
-*Ref 2: Settings for the Domain Controller*
+*Settings for the Domain Controller*
 
 * The DC needs at least 15 GB to actual work.
 
 * Because there are two NICs in the diagram, there needs to be two adapters
 ![DC settings adapter1](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/a0cbe243-5f38-4c7c-9570-f6acb0248a54)
 
-*Ref 3: The NAT is already attached to the network and is connected to the house internet*
+*The NAT is already attached to the network and is connected to the house internet*
 
 ![DC settings adapter2](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/8bc64443-58c3-45b9-8106-2eba3fe4119d)
 
-*Ref 4: The second adapter is dedicated to the internal vmware, so that is why it is attached to the Internal Network*
+*The second adapter is dedicated to the internal vmware, so that is why it is attached to the Internal Network*
 
 * Spin up the DC vm and select the Standard Evaluation Desktop Experience option.
 
   ![microsoft server OS](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/12db9978-c533-494e-bc38-2f900f5d0459)
 
-*Ref 5: The Standard Evaluation Desktop Experience option makes the command line available*
+*The Standard Evaluation Desktop Experience option makes the command line available*
 
 * When everything works, the default admin account should be displayed.
 
 ![DC admin](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c645c168-1600-4cb6-bd6b-822e895e7e77)
-*Ref 6: If the vm doesn't have enough space, it will crash*
+*If the vm doesn't have enough space, it will crash*
 
 ## Step 3: Setting up and Configuring Domain Controller 
 
@@ -77,7 +77,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![AD Diagram nic outline](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/1e8be94e-8a5e-4ce0-b828-7e4ba42db07c)
 
-*Ref 7: the two NICs are outlined, but only the internal one needs to be configured*
+*The two NICs are outlined, but only the internal one needs to be configured*
 
 *Navigate to the Network Connections tab and change the names of the adapters to Internal and Internet.
 
@@ -88,9 +88,27 @@ The Active Directory lab provides a controlled environment to explore and practi
 
   ![AD Diagram internal](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/78d5e61d-805c-4440-8394-1f3de175f562)
 
-*Ref 9: All the relevant info is included in the diagram. The default gateway is empty because the domain controller will be the default gateway*
+*All the relevant info is included in the diagram. The default gateway is empty because the domain controller will be the default gateway*
 
 ![internal IP](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/0cfcffd6-59f9-4d78-8a9f-ecf3a5204c1c)
 
-*Ref 10: The preferred DNS server will use itself as DNS*
+*The preferred DNS server will use itself as DNS*
+
+## Step 3: Install Active Directory Domain Services 
+
+
+![AD Diagram AD DS](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c28de3e2-4a7b-48bb-ba39-726ea943e739)
+
+*After the AD DS is installed a domain will be created*
+
+* From the Server Manager, select Add Roles and Features
+
+  ![DC add roles](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/9637fdf3-44e2-445c-a1df-757f8da53923)
+
+*The Add Roles and Features tab allows access to the AD DS*
+
+* After choosing Active Directory Domain Services this will pop up
+
+  ![DC AD domain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c57caf2c-9cb7-469a-a33a-fdaf629c0426)
+![DC AD install](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/998ca13e-38c5-492e-9a45-92b555170d2c)
 
