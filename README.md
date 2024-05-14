@@ -66,3 +66,20 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 *Ref 5: The Standard Evaluation Desktop Experience option makes the command line available*
 
+* When everything works, the default admin account should be displayed.
+
+![DC admin](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c645c168-1600-4cb6-bd6b-822e895e7e77)
+*Ref 6: If the vm doesn't have enough space, it will crash*
+
+## Step 3: Setting up and Configuring Domain Controller 
+
+* First, head over to the network so the IP addressing can be set up. The one that's on the internet will automatically get an IP address because of DHCP. The internal one will be set up manually.
+
+![AD Diagram nic outline](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/1e8be94e-8a5e-4ce0-b828-7e4ba42db07c)
+
+*Ref 7: the two NICs are outlined, but only the internal one needs to be configured*
+
+*Navigate to the Network Connections tab and change the names of the adapters to Internal and Internet.
+
+![DC router names](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/9328a2ac-50ab-4edd-9269-e2f5fdda9163)
+*Ref 8: to see which is which, check the home IP address for each. The one connected to the internet starts with 10.*
