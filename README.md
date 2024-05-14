@@ -112,3 +112,36 @@ The Active Directory lab provides a controlled environment to explore and practi
   ![DC AD domain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c57caf2c-9cb7-469a-a33a-fdaf629c0426)
 ![DC AD install](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/998ca13e-38c5-492e-9a45-92b555170d2c)
 
+* A post-deployment configuration is needed because the domain wasn't created before installing AD DS.
+
+![DC post-deployment](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/4ce78591-91e0-4c9b-aeaa-c7a0525e1a92)
+
+* Add new forest and then name the domain: mydomain.com.
+
+![DC root domain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/00c79b70-6743-4ebc-9c8f-9515d18e159d)
+*Installing will cause the computer to restart*
+
+* When everything resets, the menu should look different.
+
+  ![DC maindomain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/898d187d-471c-4472-8684-1a405c468741
+
+* After getting signed in, go to the start window and then click on Windows Administrative Tools and then select Active Directory Users and Computers
+
+  ![DC AD tools](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/ec3b1b18-37b8-4eac-9dc0-76972f706998)
+
+* The newly created mydomain should be in there. If it is, then create an organizational unit to put the admin account in
+
+![organizational unit](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6ea70d11-76a9-4568-9268-43f9dfa3b248)
+
+* Inside the newly created OU called Admins, add user (admin)
+
+![DC add user](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/f806141e-da13-4766-9059-131c4b4476f7)
+
+* After adding the user make sure it is promoted to admin
+![DC user admin](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/affde7e0-21e4-4017-a4ce-81e4fe25667a)
+
+* Log out of the domain controller and sign in as admin to make sure the configurations worked.
+
+![DC admin login](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c6008dbb-ddd0-4626-89fc-6977195ad36d)
+
+## Step 3: Install Remote Access Server and Network Access Translation
