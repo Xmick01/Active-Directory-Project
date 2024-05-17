@@ -175,7 +175,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![DC DHCP complete](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/123fc782-ade7-4af4-ad2c-3b28dfb3a583)
 
-## Step 5: Generate 1,000 users
+## Step 5: Generate 1,000 Users
 
 * Download the [script](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1cxeEdWYTB6YVltSS0xLUc5WG00WUVpSFF2d3xBQ3Jtc0tuVU9MVUtFS3hoblpTVGF0Z0s5bjdZMzdINVRlTWVuNzdTTENCb2x5RjlDOUp6bmFaMC1HekFUQnVzb0xMWEZYTWdiQlpiZVpCWnYxZXFjeTdTTXgxN3ctU1lqUmR4aVNNeFlLTkhrcEplRmNJU2xYbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) and save it to the desktop.
 * Inside the zip file is a txt file with 1,000r randomized names (include your own for realism!)
@@ -190,3 +190,38 @@ The Active Directory lab provides a controlled environment to explore and practi
 * To make sure that this script works, go to the Active Directory Users and Computers and see if users are added
 
 ![DC AD add users confirmed ](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/ea183f9b-0427-4029-b003-d948224766b0)
+
+## Step 6: Create Windows 10 Virtual Machine in VirtualBox
+
+* The internal nic will get its IP address from DHCP server 
+
+![AD Diagram last step](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/f53aadd4-eec9-4ec6-a629-d80fa6d0ab40)
+
+* Download the Windows 10 [Iso](https://www.microsoft.com/en-us/software-download/windows10) and create a new vm in Virtualbox
+* Select Windows 10 Pro as the OS
+![Client1 windows set up](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/5f71b23c-cada-44de-9077-728299a7a3a2)
+* After everything is done installing, check to make sure the internet works.
+![Client1 internet check](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/e5a52f97-92a7-4e68-80ce-a0936ae2e249)
+
+![Client 1 checking connection to internet via google](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/64cf2a65-1838-4390-a8d3-a343a155ed26)
+* Since google.com resolved that means the DNS server is working.
+
+![AD Diagram ping](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/863dc624-089b-4e33-8b85-462f182cd3c9)
+*Client1 has connectivity to the default gateway, the domain controller is properly forwarding it to the internet and the ping comes back as an echo reply*
+
+* Ping mydomain.com, which is the domain controller. It should respond.
+![Client 1 mydomain ping](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/d909cf93-ff54-40be-9d6e-6c7fbbd237f1)
+
+*Now that connectivity has been established, it's time to join the domain.
+![Connecting client to DC](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6ffc8965-a3cf-465d-bd57-f464933f01fc)
+
+* Switch over to the DC virtual machine and go to the DHCP server. Click on and expand Scope and the address lease will be available.
+![Domain address lease](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/883bd29b-10ae-4cb3-a1f5-e0a478f0d507)
+
+* After joining the client computer to the domain, the client computer will automatically be a member of the domain.
+
+![DC computer client 1 last pic](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/247365f4-542f-43ac-a76d-15f3d71759ce)
+
+* Now that the client computer is part of the domain, any user should be able to log into the Windows 10 client machine.
+
+![sign into domain as admin](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/b5e214a2-5416-47bc-9e3c-2ec2e00d235e)
