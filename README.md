@@ -1,8 +1,8 @@
-# Active-Directory-lab
+# Active-Directory-Project
 
 ## Objective
 
-The Active Directory lab provides a controlled environment to explore and practice Active Directory configurations without disrupting real-world systems.  The focus is to understand Active Directory concepts like user, administrator, group management, organizational unit (OU) structures, group policies, and domain trust relationships. The lab also encourages users to explore features, troubleshoot issues, networking, DNS integration and to get comfortable with virtual machines like VirtualBox. This lab helps with getting a better understanding of how the environment works in offices or schools.
+The Active Directory project provides a controlled environment to explore and practice Active Directory configurations without disrupting real-world systems.  The focus is to understand Active Directory concepts like user, administrator, group management, organizational unit (OU) structures, group policies, and domain trust relationships. The lab also encourages users to explore features, troubleshoot issues, networking, DNS integration and to get comfortable with virtual machines like VirtualBox. This lab helps with getting a better understanding of how the environment works in offices or schools.
 
 ### Skills Learned
 
