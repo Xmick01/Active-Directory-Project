@@ -7,7 +7,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 ### Skills Learned
 
 - **User and Group Management**: Create, modify, and manage user accounts and groups, including setting permissions and managing group memberships. 
-- **Group Policy Configuration**: Practice creating and applying Group Policy Objects to enforce security settings, and manage user enviroments. 
+- **Group Policy Configuration**: Practice creating and applying Group Policy Objects to enforce security settings, and manage user environments. 
 - **Domain Controller Admin**: Setting up, monitoring, and managing domain controllers.
 - **DNS Integration**: Understand how DNS supports Active Directory and learn to configure DNS settings for seamless Active Directory functionality.
 - **Trust Relationship Management**: Explore the establishment and management of trust relationships between Active Directory domains and forests.
