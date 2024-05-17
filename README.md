@@ -123,7 +123,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 * When everything resets, the menu should look different.
 
-  ![DC maindomain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/898d187d-471c-4472-8684-1a405c468741
+![DC maindomain](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/898d187d-471c-4472-8684-1a405c468741)
 
 * After getting signed in, go to the start window and then click on Windows Administrative Tools and then select Active Directory Users and Computers
 
@@ -145,3 +145,15 @@ The Active Directory lab provides a controlled environment to explore and practi
 ![DC admin login](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c6008dbb-ddd0-4626-89fc-6977195ad36d)
 
 ## Step 3: Install Remote Access Server and Network Access Translation
+
+![AD Diagram Connection](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/135c15c9-c47b-4dd7-8658-71d7917ba124)
+* The reason why RAS/NAT needs to be installed is so that the Windows 10 client can be on the private virtual network but still be able to access the internet through the domain controller.
+
+* Navigate to Add Roles and Features on the Server Manager dashboard and check the Remote Access box and continue to installation.
+![DC admin remote access](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/7a9de0a6-81d6-44dc-9a89-0d2c6e14315f)
+
+* After that, click on the Tools tab on Server Manager dashboard and open the Routing and Remote Access option. Select the DC(local) and configure the network for NAT. Select the Internet interface in order to connect to the internet.
+
+![DC AD remote access](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/45cb2383-83bd-4874-846a-15fa0494ccfb)
+
+
