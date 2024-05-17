@@ -175,3 +175,5 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![DC DHCP complete](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/123fc782-ade7-4af4-ad2c-3b28dfb3a583)
 
+## Step 5: Generate 1000 users
+
