@@ -212,7 +212,7 @@ The Active Directory project provides a controlled environment to explore and pr
 * Ping mydomain.com, which is the domain controller. It should respond.
 ![Client 1 mydomain ping](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/d909cf93-ff54-40be-9d6e-6c7fbbd237f1)
 
-*Now that connectivity has been established, it's time to join the domain.
+* Now that connectivity has been established, it's time to join the domain.
 ![Connecting client to DC](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/6ffc8965-a3cf-465d-bd57-f464933f01fc)
 
 * Switch over to the DC virtual machine and go to the DHCP server. Click on and expand Scope and the address lease will be available.
