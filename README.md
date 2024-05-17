@@ -175,5 +175,18 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![DC DHCP complete](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/123fc782-ade7-4af4-ad2c-3b28dfb3a583)
 
-## Step 5: Generate 1000 users
+## Step 5: Generate 1,000 users
 
+* Download the [script](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1cxeEdWYTB6YVltSS0xLUc5WG00WUVpSFF2d3xBQ3Jtc0tuVU9MVUtFS3hoblpTVGF0Z0s5bjdZMzdINVRlTWVuNzdTTENCb2x5RjlDOUp6bmFaMC1HekFUQnVzb0xMWEZYTWdiQlpiZVpCWnYxZXFjeTdTTXgxN3ctU1lqUmR4aVNNeFlLTkhrcEplRmNJU2xYbw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) and save it to the desktop.
+* Inside the zip file is a txt file with 1,000r randomized names (include your own for realism!)
+* Navigate to windows start and run the Windows PowerShell ISE as administrator.
+* Open the powershell script that's located in the same zip file as the txt file.
+![DC powershell ISE](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/359f992e-a78f-44e2-9a2e-7462fd6f0778)
+
+*set the execution policy to unrestricted and then run the script. 
+
+![DC powershell 1000 names](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/21191c21-bd7c-49a0-b6bd-544493ea826c)
+
+* To make sure that this script works, go to the Active Directory Users and Computers and see if users are added
+
+![DC AD add users confirmed ](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/ea183f9b-0427-4029-b003-d948224766b0)
