@@ -156,4 +156,22 @@ The Active Directory lab provides a controlled environment to explore and practi
 
 ![DC AD remote access](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/45cb2383-83bd-4874-846a-15fa0494ccfb)
 
+## Step 4: Set up DHCP Server on the Domain Controller 
+
+* This will allow the Windows 10 clients to get an IP address and will allow them to browse the internet while on a private internal network. This setup would be no different from an office or school.
+
+* Repeating the same steps, select DHCP Server from the Server Roles and continue until installation.
+![DC admin remote access DHCP](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/91fd8c34-fa27-4ce8-a3df-937218330001)
+
+* After installation, navigate to Tools and select DHCP so the scope can be established.
+
+![DC DHCP scope](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/83b4517b-c569-461e-8051-afc43625a2cb)
+
+* Enter in the IP range
+
+![DC DHCP ip range](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/107dd792-43e9-48db-a273-8e09174385d0)
+
+* When everything is complete and the DHCP server is authorized, the IPV4 status should be green.
+
+![DC DHCP complete](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/123fc782-ade7-4af4-ad2c-3b28dfb3a583)
 
