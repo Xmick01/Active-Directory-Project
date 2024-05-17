@@ -225,3 +225,7 @@ The Active Directory lab provides a controlled environment to explore and practi
 * Now that the client computer is part of the domain, any user should be able to log into the Windows 10 client machine.
 
 ![sign into domain as admin](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/b5e214a2-5416-47bc-9e3c-2ec2e00d235e)
+
+* After logging on, double-check to make sure that there is connection to the internet.
+
+![double-check connection](https://github.com/Xmick01/Active-Directory-lab/assets/130627895/c9a12ae7-5a50-4bcb-a1a4-94fd16915ed8)
